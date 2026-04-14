@@ -13,10 +13,10 @@ configure_logging()
 settings = get_settings()
 
 app = FastAPI(
-    title="Wedding Invitation Event Extractor",
+    title="Event Invitation Scheduler",
     version="1.0.0",
     description=(
-        "Upload wedding invitation images, extract event details with Gemini, "
+        "Upload event invitation images, extract event details with Gemini, "
         "create downloadable ICS calendar files, and optionally push events to Google Calendar."
     ),
 )

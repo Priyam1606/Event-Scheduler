@@ -8,7 +8,7 @@ from app.models.event import Event
 
 def build_ics_file(events: list[Event]) -> bytes:
     calendar = Calendar()
-    calendar.add("prodid", "-//Wedding Invitation Extractor//example.com//")
+    calendar.add("prodid", "-//Event Invitation Scheduler//example.com//")
     calendar.add("version", "2.0")
 
     for event in events:
@@ -19,7 +19,7 @@ def build_ics_file(events: list[Event]) -> bytes:
 
 def _build_calendar_event(event: Event) -> IcsEvent:
     item = IcsEvent()
-    item.add("uid", f"{uuid4()}@wedding-invite-extractor")
+    item.add("uid", f"{uuid4()}@event-invite-scheduler")
     item.add("summary", event.event_name or "Wedding Event")
     item.add("dtstamp", datetime.utcnow())
 

@@ -16,7 +16,7 @@ async def create_ics(request: CreateIcsRequest) -> StreamingResponse:
         )
 
     calendar_bytes = build_ics_file(request.events)
-    headers = {"Content-Disposition": 'attachment; filename="wedding-events.ics"'}
+    headers = {"Content-Disposition": 'attachment; filename="events.ics"'}
     return StreamingResponse(
         iter([calendar_bytes]),
         media_type="text/calendar; charset=utf-8",

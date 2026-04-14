@@ -28,8 +28,8 @@ async def home_page() -> HTMLResponse:
         </head>
         <body>
             <div class="container">
-                <h1>Wedding Invitation Scheduler</h1>
-                <p>Upload a wedding invitation image. The app will extract event details with Gemini and schedule them on Google Calendar.</p>
+                <h1>Event Invitation Scheduler</h1>
+                <p>Upload an event invitation image. The app will extract event details with Gemini and schedule them on Google Calendar.</p>
                 <div class="status" id="status">Checking Google Calendar connection...</div>
                 <form id="upload-form">
                     <input type="file" id="image" accept="image/*" />

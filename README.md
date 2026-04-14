@@ -1,6 +1,6 @@
-# Wedding Invitation Event Extractor
+# Event Invitation Scheduler
 
-FastAPI backend that accepts a wedding invitation image, extracts one or more events using the Google Gemini multimodal API, returns structured JSON, generates a downloadable `.ics` calendar file, and can optionally create events directly in Google Calendar.
+FastAPI backend that accepts event invitation images, extracts event details using the Google Gemini multimodal API, returns structured JSON, generates a downloadable `.ics` calendar file, and can optionally create events directly in Google Calendar.
 
 ## Folder Structure
 

@@ -13,7 +13,7 @@ from app.utils.config import get_settings
 logger = logging.getLogger(__name__)
 
 PROMPT = """
-You are extracting event details from a wedding invitation card image.
+You are extracting event details from an event invitation card image.
 
 Return ONLY valid JSON. Do not include markdown, explanations, or extra text.
 Return an array of objects in this exact format:
