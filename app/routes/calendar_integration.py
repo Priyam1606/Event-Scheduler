@@ -36,7 +36,7 @@ async def google_auth_callback(
 
     service = GoogleCalendarService()
     service.exchange_code(request=request, code=code, state=state)
-        return HTMLResponse(
+    return HTMLResponse(
         """
         <html>
           <body style="font-family: sans-serif; padding: 24px; background: #f7fafc; color: #111;">
